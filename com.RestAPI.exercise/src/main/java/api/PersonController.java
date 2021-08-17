@@ -10,9 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import model.Person;
 import service.PersonService;
 
-@RequestMapping("/index")
-
 @RestController
+@RequestMapping("/index")
 public class PersonController {
 
 	@GetMapping("/greeting")
