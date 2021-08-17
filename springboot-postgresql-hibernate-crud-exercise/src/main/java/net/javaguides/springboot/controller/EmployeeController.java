@@ -34,7 +34,7 @@ public class EmployeeController {
 	
 	private static String template = "Hello, %s!";
 	
-	@GetMapping("/greeting")
+	@GetMapping("/greetings")
 	public String Hello(@RequestParam(value = "name", defaultValue="World!") String username) {
 		return 	String.format(template, username);
 	}
