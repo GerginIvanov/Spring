@@ -1,4 +1,4 @@
-package model;
+package net.javaguides.springboot.model;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package dao;
+package net.javaguides.springboot.dao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Repository;
 
-import model.Person;
+import net.javaguides.springboot.model.Person;
 
 @Repository("fakeDao")
 public class FakePersonDataAccessService implements PersonDao {

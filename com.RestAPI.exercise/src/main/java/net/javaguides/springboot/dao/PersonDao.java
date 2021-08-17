@@ -1,10 +1,10 @@
-package dao;
+package net.javaguides.springboot.dao;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import model.Person;
+import net.javaguides.springboot.model.Person;
 
 public interface PersonDao {
 	
