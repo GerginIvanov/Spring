@@ -38,9 +38,8 @@ public class PersonService {
         personDao.deletePersonById(id);
     }
 
-    public String updatePerson(UUID id, Person person) {
+    public void updatePerson(UUID id, Person person) {
         personDao.updatePersonById(id, person);
-        return "Person updated!";
     }
 }
 
