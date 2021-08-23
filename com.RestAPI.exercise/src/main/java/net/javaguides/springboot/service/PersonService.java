@@ -14,33 +14,34 @@ import net.javaguides.springboot.model.Person;
 @Service
 public class PersonService {
 
-	private final PersonDao personDao;
+    private final PersonDao personDao;
 
-	@Autowired
-	public PersonService(@Qualifier("Postgres") PersonDao personDao) { //!!! we can change the qualifier to change DB implementations
-		super();
-		this.personDao = personDao;
-	}
+    @Autowired
+    public PersonService(@Qualifier("Postgres") PersonDao personDao) { //!!! we can change the qualifier to change DB implementations
+        super();
+        this.personDao = personDao;
+    }
 
-	public int addPerson(Person person) {
-		return personDao.insertPerson(person); 
-	}
+    public void addPerson(Person person) {
+        personDao.insertPerson(person);
+    }
 
-	public List<Person> getAllPeople() {
-		return personDao.selectAllPeople();
-	}
-	
-	public Optional<Person> getPersonById(UUID id) {
-		return personDao.selectPersonById(id);
-	}
-	
-	public int deletePerson(UUID id) {
-		return personDao.deletePersonById(id);
-	}
+    public List<Person> getAllPeople() {
+        return personDao.selectAllPeople();
+    }
 
-	public int updatePerson(UUID id, Person person) {
-		return personDao.updatePersonById(id, person);
-	}
+    public Optional<Person> getPersonById(UUID id) {
+        return personDao.selectPersonById(id);
+    }
+
+    public void deletePerson(UUID id) {
+        personDao.deletePersonById(id);
+    }
+
+    public String updatePerson(UUID id, Person person) {
+        personDao.updatePersonById(id, person);
+        return "Person updated!";
+    }
 }
 
 

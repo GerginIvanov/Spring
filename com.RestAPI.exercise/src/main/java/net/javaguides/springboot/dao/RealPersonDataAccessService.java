@@ -21,7 +21,12 @@ public class RealPersonDataAccessService implements PersonDao {
 
     @Override
     public int insertPerson(UUID id, Person person) {
-        return 0;
+        String sql = "INSERT INTO person (id, name) VALUES (?, ?)";
+        return jdbcTemplate.update(
+                sql,
+                id,
+                person.getName()
+        );
     }
 
     @Override
