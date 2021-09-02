@@ -1,30 +1,14 @@
-workspaces/.metadata/.log
-/.metadata/
-JPA-example-Amigoscode/build.gradle
-JPA-example-Amigoscode/gradlew
-JPA-example-Amigoscode/gradlew.bat
-JPA-example-Amigoscode/settings.gradle
-JPA-example-Amigoscode/.gradle/7.1/gc.properties
-JPA-example-Amigoscode/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock
-JPA-example-Amigoscode/.gradle/7.1/dependencies-accessors/gc.properties
-JPA-example-Amigoscode/.gradle/7.1/executionHistory/executionHistory.bin
-JPA-example-Amigoscode/.gradle/7.1/executionHistory/executionHistory.lock
-JPA-example-Amigoscode/.gradle/7.1/fileChanges/last-build.bin
-JPA-example-Amigoscode/.gradle/7.1/fileHashes/fileHashes.bin
-JPA-example-Amigoscode/.gradle/7.1/fileHashes/fileHashes.lock
-JPA-example-Amigoscode/.gradle/buildOutputCleanup/buildOutputCleanup.lock
-JPA-example-Amigoscode/.gradle/buildOutputCleanup/cache.properties
-JPA-example-Amigoscode/.gradle/buildOutputCleanup/outputFiles.bin
-JPA-example-Amigoscode/.gradle/checksums/checksums.lock
-JPA-example-Amigoscode/.gradle/vcs-1/gc.properties
-JPA-example-Amigoscode/.idea/.gitignore
-JPA-example-Amigoscode/.idea/gradle.xml
-JPA-example-Amigoscode/.idea/misc.xml
-JPA-example-Amigoscode/.idea/runConfigurations.xml
-JPA-example-Amigoscode/.idea/vcs.xml
-JPA-example-Amigoscode/gradle/wrapper/gradle-wrapper.jar
-JPA-example-Amigoscode/gradle/wrapper/gradle-wrapper.properties
-JPA-example-Amigoscode/.gradle/checksums/md5-checksums.bin
-JPA-example-Amigoscode/.gradle/checksums/sha1-checksums.bin
-JPA-example-Amigoscode/.idea/compiler.xml
-JPA-example-Amigoscode/.idea/jarRepositories.xml
+.gradle
+**/build/
+!src/**/build/
+
+*.metadata
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
